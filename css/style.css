@@ -1,5 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: "Raleway", sans-serif !important;
+    font-family: "Raleway", sans-serif;
+    color: #111111;
+}
+
+/* Inicia Index */
+a {
+    text-decoration: none;
+}
+
+a.nav-link {
+    color: #111111 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 1rem;
+}
+
+a:hover.nav-link {
+    color: #1859E8 !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #1859E8 !important;
+}
+
+.navbar {
+    background-color: #FFF;
+    padding: 1.25rem 0;
+}
+
+.logo-david-ortuno img {
+    height: 3.75rem;
+}
+
+/* Termina Index */
+
+@media (max-width: 991.98px) {
+
+    .navbar-collapse ul {
+        padding: 1.25rem 0 0 0;
+    }
+
+    a.nav-link {
+        margin: 0;
+    }
 }
