@@ -38,7 +38,8 @@ a:hover.link {
     height: 3.75rem;
 }
 
-.intro-titulo {
+.intro-titulo,
+.proyectos {
     padding: 6.25rem 0;
 }
 
@@ -70,7 +71,34 @@ h1.titulo-principal {
     padding-bottom: 0.875rem;
 }
 
+.col-proyecto {
+    border-top: 1px solid #ccc;
+    padding-top: 1.875rem;
+}
+
+.numero-proyecto,
+.anio-proyecto {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+
+.nombre-proyecto {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1859E8;
+    padding-top: 90px;
+}
+
+.img-proyecto {
+    padding-top: 1.875rem;
+}
+
 /* Termina Index */
+
+@media (max-width: 1199.98px) {}
 
 @media (max-width: 991.98px) {
 
@@ -82,7 +110,8 @@ h1.titulo-principal {
         margin: 0;
     }
 
-    .intro-titulo {
+    .intro-titulo,
+    .proyectos {
         padding: 3.125rem 0;
     }
 
@@ -93,4 +122,37 @@ h1.titulo-principal {
     .texto-hola {
         padding-top: 1.875rem;
     }
+
+    .proyecto-12-col .numero-proyecto {
+        border-top: 1px solid #ccc;
+        padding-top: 1.875rem;
+    }
+
+    .col-proyecto {
+        padding: 0;
+        border: 0;
+    }
+
+    h2.nombre-proyecto {
+        font-size: 1.875rem;
+        padding: 1.875rem 0;
+    }
+
+    .nombre-proyecto {
+        padding-top: 0;
+    }
+
+    .numero-proyecto,
+    .anio-proyecto {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .img-proyecto {
+        padding-top: 0;
+    }
 }
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {}
