@@ -3,6 +3,7 @@
 body {
     font-family: "Raleway", sans-serif;
     color: #111111;
+    font-size: 1.125rem;
 }
 
 /* Inicia Index */
@@ -14,14 +15,17 @@ a.nav-link {
     color: #111111 !important;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 0 1rem;
 }
 
-a:hover.nav-link {
-    color: #1859E8 !important;
+a.link {
+    color: #111111 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0.875rem;
 }
 
-.navbar-nav .nav-link.active {
+a:hover.nav-link,
+a:hover.link {
     color: #1859E8 !important;
 }
 
@@ -34,6 +38,38 @@ a:hover.nav-link {
     height: 3.75rem;
 }
 
+.intro-titulo {
+    padding: 6.25rem 0;
+}
+
+h1.titulo-principal {
+    font-family: "Raleway", sans-serif;
+    font-size: 3.75rem;
+    font-weight: 900;
+    color: #1859E8;
+}
+
+.texto-bold {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+.texto-ornamental-bold {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.texto-ornamental-normal {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.texto-hola {
+    padding-bottom: 0.875rem;
+}
+
 /* Termina Index */
 
 @media (max-width: 991.98px) {
@@ -44,5 +80,17 @@ a:hover.nav-link {
 
     a.nav-link {
         margin: 0;
+    }
+
+    .intro-titulo {
+        padding: 3.125rem 0;
+    }
+
+    h1.titulo-principal {
+        font-size: 3rem;
+    }
+
+    .texto-hola {
+        padding-top: 1.875rem;
     }
 }
