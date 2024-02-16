@@ -38,9 +38,12 @@ a:hover.link {
     height: 3.75rem;
 }
 
-.intro-titulo,
-.proyectos {
+.intro-titulo {
     padding: 6.25rem 0;
+}
+
+.proyectos {
+    padding: 6.25rem 0 0 0;
 }
 
 h1.titulo-principal {
@@ -113,6 +116,22 @@ h1.titulo-principal {
     margin-bottom: 0;
 }
 
+footer .container-footer {
+    padding: 1.875rem 0;
+}
+
+.container-footer {
+    border-top: 1px solid #ccc;
+}
+
+.container-footer .logo-david-ortuno img {
+    height: 5rem;
+}
+
+.links-footer {
+    text-align: right
+}
+
 /* Termina Index */
 
 @media (max-width: 1199.98px) {}
@@ -127,9 +146,12 @@ h1.titulo-principal {
         margin: 0;
     }
 
-    .intro-titulo,
-    .proyectos {
+    .intro-titulo {
         padding: 3.125rem 0;
+    }
+
+    .proyectos {
+        padding: 3.125rem 0 0 0;
     }
 
     h1.titulo-principal {
@@ -181,6 +203,19 @@ h1.titulo-principal {
 
     .proyecto-6-col .img-proyecto {
         padding-bottom: 0.938rem;
+    }
+
+    footer .container-footer {
+        padding: 1.25rem 0 3.125rem 0;
+    }
+
+    .container-footer .logo-david-ortuno {
+        padding: 1.875rem 0;
+    }
+
+    .container-footer,
+    .links-footer {
+        text-align: center
     }
 }
 
