@@ -9,9 +9,11 @@ body {
 /* Inicia Index */
 a {
     text-decoration: none;
+    color: #111111 !important;
 }
 
-a.nav-link {
+a.nav-link,
+a.link {
     color: #111111 !important;
     font-weight: 700;
     text-transform: uppercase;
@@ -24,9 +26,14 @@ a.link {
     margin-top: 0.875rem;
 }
 
+a:hover,
 a:hover.nav-link,
 a:hover.link {
     color: #1859E8 !important;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
 }
 
 .navbar {
