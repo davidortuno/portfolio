@@ -1,26 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --fondo-blanco: #FFFFFF;
+    --fondo-negro: #111111;
+    --azul-base: #1859E8;
+    --borde-linea: #CCCCCC;
+    --texto-negro: #111111;
+    --texto-blanco: #FFFFFF
+}
+
 body {
     font-family: "Raleway", sans-serif;
-    color: #111111;
+    color: var(--texto-negro);
     font-size: 1.125rem;
+    background-color: var(--fondo-blanco);
 }
 
 /* Inicia Index */
 a {
     text-decoration: none;
-    color: #111111 !important;
+    color: var(--texto-negro) !important;
 }
 
 a.nav-link,
 a.link {
-    color: #111111 !important;
+    color: var(--texto-negro) !important;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 a.link {
-    color: #111111 !important;
+    color: var(--texto-negro) !important;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 0.875rem;
@@ -29,7 +39,7 @@ a.link {
 a:hover,
 a:hover.nav-link,
 a:hover.link {
-    color: #1859E8 !important;
+    color: var(--azul-base) !important;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
     -moz-transition: all 0.35s;
@@ -37,8 +47,9 @@ a:hover.link {
 }
 
 .navbar {
-    background-color: #FFF;
+    background-color: var(--fondo-blanco);
     padding: 1.25rem 0;
+    border-bottom: 1px solid var(--borde-linea) !important;
 }
 
 .logo-david-ortuno img {
@@ -57,7 +68,7 @@ h1.titulo-principal {
     font-family: "Raleway", sans-serif;
     font-size: 3.75rem;
     font-weight: 900;
-    color: #1859E8;
+    color: var(--azul-base);
 }
 
 .texto-bold {
@@ -87,7 +98,7 @@ h1.titulo-principal {
 }
 
 .col-proyecto {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--borde-linea);
     padding-top: 1.875rem;
 }
 
@@ -107,7 +118,7 @@ h1.titulo-principal {
     font-family: "Raleway", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #1859E8;
+    color: var(--azul-base);
     padding-top: 90px;
 }
 
@@ -128,7 +139,7 @@ footer .container-footer {
 }
 
 .container-footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--borde-linea);
 }
 
 .container-footer .logo-david-ortuno img {
@@ -180,7 +191,7 @@ footer .container-footer {
 
     .proyecto-12-col .numero-proyecto,
     .proyecto-6-col .numero-proyecto {
-        border-top: 1px solid #ccc;
+        border-top: 1px solid var(--borde-linea);
         padding-top: 1.875rem;
     }
 
