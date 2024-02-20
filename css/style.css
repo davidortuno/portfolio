@@ -5,6 +5,7 @@
     --fondo-negro: #111111;
     --azul-base: #1859E8;
     --borde-linea: #CCCCCC;
+    --borde-linea-azul: #1859E8;
     --texto-negro: #111111;
     --texto-blanco: #FFFFFF
 }
@@ -49,7 +50,7 @@ a:hover.link {
 .navbar {
     background-color: var(--fondo-blanco);
     padding: 1.25rem 0;
-    border-bottom: 1px solid var(--borde-linea) !important;
+    border-bottom: 1px solid var(--borde-linea-azul) !important;
 }
 
 .logo-david-ortuno img {
@@ -145,7 +146,7 @@ footer .container-footer {
 }
 
 .container-footer {
-    border-top: 1px solid var(--borde-linea);
+    border-top: 1px solid var(--borde-linea-azul);
 }
 
 .container-footer .logo-david-ortuno img {
