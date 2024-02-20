@@ -159,6 +159,10 @@ footer .container-footer {
 /* Termina Index */
 
 /* Inicia Perfil */
+.intro-titulo-perfil {
+    padding: 6.25rem 0 3.125rem 0;
+}
+
 .img-perfil {
     padding-top: 2.625rem;
     padding-bottom: 3.125rem;
@@ -174,7 +178,7 @@ footer .container-footer {
 
 .col-cv {
     border-top: 1px solid var(--borde-linea);
-    padding-bottom: 3.125rem;
+    margin-bottom: 3.125rem;
 }
 
 .bloque-contacto {
@@ -183,7 +187,7 @@ footer .container-footer {
 }
 
 .resumen-cv .col-cv:last-child {
-    padding-bottom: 6.25rem
+    margin-bottom: 6.25rem
 }
 
 /* Termina Perfil */
@@ -236,9 +240,10 @@ footer .container-footer {
         border: 0;
     }
 
-    h2.nombre-proyecto {
+    h2.nombre-proyecto,
+    .titulo-cv {
         font-size: 1.875rem;
-        padding: 1.875rem 0;
+        margin: 1.875rem 0;
     }
 
     .nombre-proyecto {
@@ -270,6 +275,19 @@ footer .container-footer {
     .container-footer,
     .links-footer {
         text-align: center
+    }
+
+    .col-cv,
+    .resumen-cv .col-cv:last-child {
+        margin-bottom: 2.125rem;
+    }
+
+    .intro-titulo-perfil {
+        padding: 1.875rem 0;
+    }
+
+    .img-perfil {
+        padding: 1.875rem 0;
     }
 }
 
