@@ -192,6 +192,30 @@ footer .container-footer {
 }
 
 /* Termina Perfil */
+.img-intro-proyecto {
+    padding-top: 2.625rem;
+    padding-bottom: 3.125rem;
+}
+
+/* Inicia Proyecto */
+
+.intro-proyecto {
+    padding: 6.25rem 0;
+}
+
+.img-intro-proyecto {
+    padding: 2.625rem 0 6.25rem 0;
+}
+
+.imagenes-proyecto {
+    padding-top: 6.25rem;
+}
+
+.imagenes-proyecto img {
+    margin-bottom: 1.5rem;
+}
+
+/* Termina Proyecto */
 
 @media (max-width: 1199.98px) {}
 
@@ -283,12 +307,37 @@ footer .container-footer {
         margin-bottom: 2.125rem;
     }
 
-    .intro-titulo-perfil {
+    .intro-titulo-perfil,
+    .intro-titulo-proyecto {
         padding: 1.875rem 0;
     }
 
     .img-perfil {
         padding: 1.875rem 0;
+    }
+
+    .img-intro-proyecto {
+        padding: 0.938rem 0 0 0;
+    }
+
+    .imagenes-proyecto img {
+        margin-bottom: 0.938rem;
+    }
+
+    .intro-proyecto {
+        padding: 3.125rem 0;
+    }
+
+    .intro-titulo-proyecto {
+        padding: 0 0 3.125rem 0;
+    }
+
+    .imagenes-proyecto {
+        padding-top: 3.125rem;
+    }
+
+    .imagenes-proyecto .col-lg-6:last-child img {
+        margin-bottom: 0;
     }
 }
 
