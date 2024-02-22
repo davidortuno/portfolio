@@ -215,6 +215,14 @@ footer .container-footer {
     margin-bottom: 1.5rem;
 }
 
+.otros-proyectos {
+    padding-bottom: 6.25rem;
+}
+
+.proyecto-miniatura {
+    margin-bottom: 1.5rem;
+}
+
 /* Termina Proyecto */
 
 @media (max-width: 1199.98px) {}
@@ -338,6 +346,10 @@ footer .container-footer {
 
     .imagenes-proyecto .col-lg-6:last-child img {
         margin-bottom: 0;
+    }
+
+    .otros-proyectos {
+        padding-bottom: 3.125rem;
     }
 }
 
