@@ -7,7 +7,8 @@
     --borde-linea: #CCCCCC;
     --borde-linea-azul: #1859E8;
     --texto-negro: #111111;
-    --texto-blanco: #FFFFFF
+    --texto-blanco: #FFFFFF;
+    --texto-pel: #188A8A;
 }
 
 body {
@@ -221,6 +222,11 @@ footer .container-footer {
 
 .proyecto-miniatura {
     margin-bottom: 1.5rem;
+}
+
+.texto-pel,
+.titulo-principal.texto-pel {
+    color: var(--texto-pel);
 }
 
 /* Termina Proyecto */
