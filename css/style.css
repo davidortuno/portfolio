@@ -42,10 +42,12 @@ a:hover,
 a:hover.nav-link,
 a:hover.link {
     color: var(--azul-base) !important;
-    -webkit-transition: all 0.35s;
+    /* -webkit-transition: all 0.35s;
     transition: all 0.35s;
     -moz-transition: all 0.35s;
-    -ms-transition: all 0.35s;
+    -ms-transition: all 0.35s; */
+    transition: color 0.5s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
 .navbar {
@@ -127,7 +129,7 @@ h1.titulo-principal {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--azul-base);
-    padding-top: 90px;
+    /* padding-top: 90px; */
 }
 
 .img-proyecto {
@@ -282,6 +284,63 @@ footer .container-footer {
 } */
 
 /* Termina link anima */
+
+/* Inicia adsila menu */
+.menu__item {
+    color: var(--texto-negro);
+    /* letter-spacing: 0.03rem; */
+}
+
+.menu__item:hover,
+.menu--adsila .menu__item:focus {
+    color: var(--azul-base);
+}
+
+.menu__item {
+    position: relative;
+    outline: none;
+    z-index: 1;
+}
+
+.menu__item-name {
+    padding: 0 0.35rem;
+    transition: color 0.5s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.menu__item-name {
+    position: relative;
+    display: inline-block;
+}
+
+.menu__item:hover .menu__item-name::before,
+.menu__item:focus .menu__item-name::before,
+.menu__item:hover .menu__item-label::before,
+.menu__item:focus .menu__item-label::before {
+    transform: scale3d(1, 1, 1);
+}
+
+.menu__item-name::before,
+.menu__item-label::before {
+    background: var(--azul-base);
+}
+
+.menu__item-name::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    opacity: 0.3;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 0% 50%;
+    transition: transform 0.5s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* Termina adsila menu */
 
 @media (max-width: 1199.98px) {}
 
