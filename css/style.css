@@ -8,7 +8,9 @@
     --borde-linea-azul: #1859E8;
     --texto-negro: #111111;
     --texto-blanco: #FFFFFF;
-    --texto-pel: #188A8A;
+    --texto-pel: #F87553;
+    --texto-eras: #49635D;
+    --texto-antico: #A01916;
 }
 
 body {
@@ -132,6 +134,12 @@ h1.titulo-principal {
     /* padding-top: 90px; */
 }
 
+.row-nombre-proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
 .img-proyecto {
     padding-top: 1.875rem;
 }
@@ -226,12 +234,43 @@ footer .container-footer {
     margin-bottom: 1.5rem;
 }
 
+/* Termina Proyecto */
+
+/* Inician colores de proyectos */
 .texto-pel,
-.titulo-principal.texto-pel {
+.titulo-principal.texto-pel,
+.texto-hover-pel:hover {
     color: var(--texto-pel);
 }
 
-/* Termina Proyecto */
+.texto-hover-pel.menu__item-name::before,
+.texto-hover-pel.menu__item-label::before {
+    background: var(--texto-pel);
+}
+
+.texto-eras,
+.titulo-principal.texto-eras,
+a .texto-hover-eras:hover {
+    color: var(--texto-eras);
+}
+
+.texto-hover-eras.menu__item-name::before,
+.texto-hover-eras.menu__item-label::before {
+    background: var(--texto-eras);
+}
+
+.texto-antico,
+.titulo-principal.texto-antico,
+a .texto-hover-antico:hover {
+    color: var(--texto-antico);
+}
+
+.texto-hover-antico.menu__item-name::before,
+.texto-hover-antico.menu__item-label::before {
+    background: var(--texto-antico);
+}
+
+/* Terminan colores de proyectos */
 
 /* Inicia link anima */
 
@@ -291,10 +330,10 @@ footer .container-footer {
     /* letter-spacing: 0.03rem; */
 }
 
-.menu__item:hover,
+/* .menu__item:hover,
 .menu--adsila .menu__item:focus {
     color: var(--azul-base);
-}
+} */
 
 .menu__item {
     position: relative;
