@@ -135,7 +135,7 @@ h1.titulo-principal {
     align-items: end;
 }
 
-.row-nombre-proyecto .link--metis::before {
+.proyecto-12-col .link--metis::before, .proyecto-6-col .link--metis::before{
     margin-top: -1rem;
 }
 
@@ -472,7 +472,7 @@ footer .container-footer {
         padding-bottom: 0.938rem;
     }
 
-    .row-nombre-proyecto .link--metis::before {
+    .proyecto-12-col .link--metis::before, .proyecto-6-col .link--metis::before {
         margin-top: -2rem;
     }
 
