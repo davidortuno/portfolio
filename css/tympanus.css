@@ -60,7 +60,7 @@
 
 /* COMIENZA LINE HOVER */
 
-.link {
+/* .link {
     cursor: pointer;
     font-size: 18px;
     position: relative;
@@ -81,7 +81,6 @@
 
 .link::before {
     content: '';
-    /* show by default */
 }
 
 .link--metis {
@@ -593,9 +592,6 @@
     stroke-dashoffset: 0;
 }
 
-/* Trick from https://css-tricks.com/a-trick-that-makes-drawing-svg-lines-way-easier/ */
-
-
 .link__graphic--arc {
     top: 73%;
     left: -23%;
@@ -710,4 +706,4 @@
     .frame a {
         pointer-events: auto;
     }
-}
+} */

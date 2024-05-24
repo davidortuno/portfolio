@@ -23,31 +23,22 @@ body {
 /* Inicia Index */
 a {
     text-decoration: none;
-    color: var(--texto-negro) !important;
-}
-
-a.nav-link,
-a.link {
-    color: var(--texto-negro) !important;
-    font-weight: 700;
-    text-transform: uppercase;
+    color: var(--texto-negro);
 }
 
 a.link {
-    color: var(--texto-negro) !important;
+    color: var(--texto-negro);
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 0.875rem;
 }
 
 a:hover,
-a:hover.nav-link,
 a:hover.link {
-    color: var(--azul-base) !important;
-    /* -webkit-transition: all 0.35s;
+    color: var(--azul-base);
+    -webkit-transition: all 0.35s;
     transition: all 0.35s;
     -moz-transition: all 0.35s;
-    -ms-transition: all 0.35s; */
+    -ms-transition: all 0.35s;
     transition: color 0.5s;
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
@@ -56,6 +47,10 @@ a:hover.link {
     background-color: var(--fondo-blanco);
     padding: 1.25rem 0;
     border-bottom: 1px solid var(--borde-linea-azul) !important;
+}
+
+.navbar li {
+    margin: 0 0 0 0.625rem;
 }
 
 .logo-david-ortuno img {
@@ -130,14 +125,27 @@ h1.titulo-principal {
     font-family: "Raleway", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--azul-base);
-    /* padding-top: 90px; */
+    text-wrap: pretty;
+    margin-bottom: 1rem;
 }
 
 .row-nombre-proyecto {
     display: flex;
     flex-wrap: wrap;
     align-items: end;
+}
+
+.row-nombre-proyecto .link--metis::before {
+    margin-top: -1rem;
+}
+
+.link-nombre-proyecto {
+    display: flex;
+    width: fit-content;
+}
+
+a.link-nombre-proyecto {
+    text-transform: none !important;
 }
 
 .img-proyecto {
@@ -240,7 +248,7 @@ footer .container-footer {
 .texto-pel,
 .titulo-principal.texto-pel,
 .texto-hover-pel:hover {
-    color: var(--texto-pel);
+    color: var(--texto-pel) !important;
 }
 
 .texto-hover-pel.menu__item-name::before,
@@ -250,8 +258,8 @@ footer .container-footer {
 
 .texto-eras,
 .titulo-principal.texto-eras,
-a .texto-hover-eras:hover {
-    color: var(--texto-eras);
+.texto-hover-eras:hover {
+    color: var(--texto-eras) !important;
 }
 
 .texto-hover-eras.menu__item-name::before,
@@ -261,8 +269,8 @@ a .texto-hover-eras:hover {
 
 .texto-antico,
 .titulo-principal.texto-antico,
-a .texto-hover-antico:hover {
-    color: var(--texto-antico);
+.texto-hover-antico:hover {
+    color: var(--texto-antico) !important;
 }
 
 .texto-hover-antico.menu__item-name::before,
@@ -272,16 +280,44 @@ a .texto-hover-antico:hover {
 
 /* Terminan colores de proyectos */
 
-/* Inicia link anima */
+/* .anima-link {
+    text-decoration: none;
+    transition: 0.4s ease;
+    position: relative;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
 
-.link-anima {
+.anima-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px !important;
+    background-color: currentColor;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.anima-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+} */
+
+/* Inicia anima link */
+.link {
     cursor: pointer;
     position: relative;
     white-space: nowrap;
+    color: currentColor;
 }
 
-.link-anima::before,
-.link-anima::after {
+.link::before,
+.link::after {
     position: absolute;
     width: 100%;
     height: 1px;
@@ -291,38 +327,21 @@ a .texto-hover-antico:hover {
     pointer-events: none;
 }
 
-.link-anima::before {
+.link::before {
     content: '';
 }
 
-.link-line {
-    letter-spacing: 1px;
-    text-indent: 1px;
-}
-
-.link-line::before {
-    top: 50%;
-    height: 2px;
+.link--metis::before {
     transform-origin: 100% 50%;
     transform: scale3d(0, 1, 1);
-    transition: transform 0.3s cubic-bezier(0.4, 1, 0.8, 1);
+    transition: transform 0.3s;
 }
 
-.link-line:hover::before {
+.link--metis:hover::before {
     transform-origin: 0% 50%;
     transform: scale3d(1, 1, 1);
 }
-
-/* .link-line span {
-    display: inline-block;
-    transition: transform 0.3s cubic-bezier(0.4, 1, 0.8, 1);
-}
-
-.link-line:hover span {
-    transform: scale3d(1.1, 1.1, 1.1);
-} */
-
-/* Termina link anima */
+/* Termina anima link */
 
 /* Inicia adsila menu */
 .menu__item {
@@ -389,8 +408,8 @@ a .texto-hover-antico:hover {
         padding: 1.25rem 0 0 0;
     }
 
-    a.nav-link {
-        margin: 0;
+    .navbar li {
+        margin: 0.625rem 0;
     }
 
     .intro-titulo {
@@ -451,6 +470,10 @@ a .texto-hover-antico:hover {
 
     .proyecto-6-col .img-proyecto {
         padding-bottom: 0.938rem;
+    }
+
+    .row-nombre-proyecto .link--metis::before {
+        margin-top: -2rem;
     }
 
     footer .container-footer {
