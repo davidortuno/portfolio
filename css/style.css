@@ -81,6 +81,7 @@ h1.titulo-principal {
     font-family: "Playfair Display", serif;
     font-weight: 800;
     font-style: italic;
+    letter-spacing: 0.038rem;
 }
 
 .texto-ornamental-normal {
@@ -93,10 +94,12 @@ h1.titulo-principal {
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: italic;
+    letter-spacing: 0.05rem;
 }
 
 .texto-hola {
     padding-bottom: 0.875rem;
+    text-wrap: pretty;
 }
 
 .proyecto-12-col,
