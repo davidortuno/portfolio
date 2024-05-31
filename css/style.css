@@ -11,6 +11,7 @@
     --texto-pel: #F87553;
     --texto-eras: #49635D;
     --texto-antico: #A01916;
+    --texto-gaceta-cch: #D59F0F;
 }
 
 body {
@@ -255,20 +256,15 @@ footer .container-footer {
     color: var(--texto-pel) !important;
 }
 
-.texto-hover-pel.menu__item-name::before,
+/* .texto-hover-pel.menu__item-name::before,
 .texto-hover-pel.menu__item-label::before {
     background: var(--texto-pel);
-}
+} */
 
 .texto-eras,
 .titulo-principal.texto-eras,
 .texto-hover-eras:hover {
     color: var(--texto-eras) !important;
-}
-
-.texto-hover-eras.menu__item-name::before,
-.texto-hover-eras.menu__item-label::before {
-    background: var(--texto-eras);
 }
 
 .texto-antico,
@@ -277,40 +273,14 @@ footer .container-footer {
     color: var(--texto-antico) !important;
 }
 
-.texto-hover-antico.menu__item-name::before,
-.texto-hover-antico.menu__item-label::before {
-    background: var(--texto-antico);
+.texto-gaceta-cch,
+.titulo-principal.texto-gaceta-cch,
+.texto-hover-gaceta-cch:hover {
+    color: var(--texto-gaceta-cch) !important;
 }
+
 
 /* Terminan colores de proyectos */
-
-/* .anima-link {
-    text-decoration: none;
-    transition: 0.4s ease;
-    position: relative;
-    text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    cursor: pointer;
-}
-
-.anima-link::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px !important;
-    background-color: currentColor;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-}
-
-.anima-link:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-} */
 
 /* Inicia anima link */
 .link {
