@@ -12,6 +12,12 @@
     --texto-eras: #49635D;
     --texto-antico: #A01916;
     --texto-gaceta-cch: #D59F0F;
+    --texto-50-aniv-cch: #3813C2;
+    --texto-vigiluccis: #f9c229;
+    --texto-jun-real-state: #195252;
+    --texto-pacch: #4fc2bd;
+    --texto-sid-unam: #c41443;
+    --texto-sdsn-mx: #20165b
 }
 
 body {
@@ -277,6 +283,42 @@ footer .container-footer {
 .titulo-principal.texto-gaceta-cch,
 .texto-hover-gaceta-cch:hover {
     color: var(--texto-gaceta-cch) !important;
+}
+
+.texto-50-aniv-cch,
+.titulo-principal.texto-50-aniv-cch,
+.texto-hover-50-aniv-cch:hover {
+    color: var(--texto-50-aniv-cch) !important;
+}
+
+.texto-vigiluccis,
+.titulo-principal.texto-vigiluccis,
+.texto-hover-vigiluccis:hover {
+    color: var(--texto-vigiluccis) !important;
+}
+
+.texto-jun-real-state,
+.titulo-principal.texto-jun-real-state,
+.texto-hover-jun-real-state:hover {
+    color: var(--texto-jun-real-state) !important;
+}
+
+.texto-pacch,
+.titulo-principal.texto-pacch,
+.texto-hover-pacch:hover {
+    color: var(--texto-pacch) !important;
+}
+
+.texto-sid-unam,
+.titulo-principal.texto-sid-unam,
+.texto-hover-sid-unam:hover {
+    color: var(--texto-sid-unam) !important;
+}
+
+.texto-sdsn-mx,
+.titulo-principal.texto-sdsn-mx,
+.texto-hover-sdsn-mx:hover {
+    color: var(--texto-sdsn-mx) !important;
 }
 
 
