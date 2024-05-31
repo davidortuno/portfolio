@@ -17,7 +17,8 @@
     --texto-jun-real-state: #195252;
     --texto-pacch: #4fc2bd;
     --texto-sid-unam: #c41443;
-    --texto-sdsn-mx: #20165b
+    --texto-sdsn-mx: #20165b;
+    --texto-ampersand: #ff1f20;
 }
 
 body {
@@ -319,6 +320,12 @@ footer .container-footer {
 .titulo-principal.texto-sdsn-mx,
 .texto-hover-sdsn-mx:hover {
     color: var(--texto-sdsn-mx) !important;
+}
+
+.texto-ampersand,
+.titulo-principal.texto-ampersand,
+.texto-hover-ampersand:hover {
+    color: var(--texto-ampersand) !important;
 }
 
 
