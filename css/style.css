@@ -90,19 +90,22 @@ h1.titulo-principal {
     font-weight: 800;
     font-style: italic;
     letter-spacing: 0.038rem;
+    text-wrap: pretty;
 }
 
 .texto-ornamental-normal {
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
+    text-wrap: pretty;
 }
 
 .texto-ornamental-italic {
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: italic;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.038rem;
+    text-wrap: pretty;
 }
 
 .texto-hola {
@@ -156,6 +159,11 @@ h1.titulo-principal {
     width: fit-content;
 }
 
+.otros-proyecto-col {
+    display: flex;
+    align-items: center;
+}
+
 a.link-nombre-proyecto {
     text-transform: none !important;
 }
@@ -200,7 +208,8 @@ footer .container-footer {
     padding-bottom: 3.125rem;
 }
 
-.titulo-cv {
+.titulo-cv,
+.titulo-otros-proyectos {
     font-family: "Raleway", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
@@ -213,7 +222,13 @@ footer .container-footer {
     margin-bottom: 3.125rem;
 }
 
-.bloque-contacto {
+.col-otros-proyectos {
+    border-top: 1px solid var(--borde-linea);
+    margin-bottom: 6.25rem;
+}
+
+.bloque-contacto,
+.bloque-otros-proyectos {
     border-top: 1px solid var(--borde-linea);
     padding-top: 0.938rem;
 }
@@ -335,7 +350,7 @@ footer .container-footer {
 .link {
     cursor: pointer;
     position: relative;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     color: currentColor;
 }
 
@@ -488,7 +503,8 @@ footer .container-footer {
     }
 
     h2.nombre-proyecto,
-    .titulo-cv {
+    .titulo-cv,
+    .titulo-otros-proyectos {
         font-size: 1.875rem;
         margin: 1.875rem 0;
     }
@@ -533,6 +549,11 @@ footer .container-footer {
     .resumen-cv .col-cv:last-child {
         margin-bottom: 2.125rem;
     }
+
+    .col-otros-proyectos {
+        margin-bottom: 3.125rem;
+    }
+
 
     .intro-titulo-perfil,
     .intro-titulo-proyecto {
