@@ -12,6 +12,7 @@
   <link rel="canonical" href="">
 
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -58,10 +59,14 @@
           </h1>
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid img-intro-proyecto" src="img/pel/pel-logo.jpg" alt="">
+          <a href="img/pel/pel-logo.jpg" class="popupBox"><img class="img-fluid img-intro-proyecto"
+              src="img/pel/pel-logo.jpg" alt="" title="" /></a>
+          <!-- <img class="img-fluid img-intro-proyecto" src="img/pel/pel-logo.jpg" alt=""> -->
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid img-intro-proyecto" src="img/pel/pel-logo-2.jpg" alt="">
+          <a href="img/pel/pel-logo-2.jpg" class="popupBox"><img class="img-fluid img-intro-proyecto"
+              src="img/pel/pel-logo-2.jpg" alt="" title="" /></a>
+          <!-- <img class="img-fluid img-intro-proyecto" src="img/pel/pel-logo-2.jpg" alt=""> -->
         </div>
       </div>
 
@@ -102,13 +107,19 @@
 
       <div class="row imagenes-proyecto">
         <div class="col-lg-12">
-          <img class="img-fluid" src="img/pel/pel-mockup-intro-1.jpg" alt="">
+          <a href="img/pel/pel-mockup-intro-1.jpg" class="popupBox"><img class="img-fluid img-intro-proyecto"
+              src="img/pel/pel-mockup-intro-1.jpg" alt="" title="" /></a>
+          <!-- <img class="img-fluid" src="img/pel/pel-mockup-intro-1.jpg" alt=""> -->
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/pel/pel-mockup-intro-2.jpg" alt="">
+          <a href="img/pel/pel-mockup-intro-2.jpg" class="popupBox"><img class="img-fluid img-intro-proyecto"
+              src="img/pel/pel-mockup-intro-2.jpg" alt="" title="" /></a>
+          <!-- <img class="img-fluid" src="img/pel/pel-mockup-intro-2.jpg" alt=""> -->
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/pel/pel-mockup-intro-3.jpg" alt="">
+          <a href="img/pel/pel-mockup-intro-3.jpg" class="popupBox"><img class="img-fluid img-intro-proyecto"
+              src="img/pel/pel-mockup-intro-3.jpg" alt="" title="" /></a>
+          <!-- <img class="img-fluid" src="img/pel/pel-mockup-intro-3.jpg" alt=""> -->
         </div>
       </div>
 
@@ -208,6 +219,20 @@
   </footer>
 
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/simple-lightbox.min.js"></script>
+  <script>
+    (function () {
+
+      var popupBox = new SimpleLightbox('a.popupBox', {
+        // var $gallery = new SimpleLightbox('.gallery a', {
+        loop: false,
+        doubleTapZoom: false,
+        scrollZoom: false,
+        showCounter: false,
+      });
+
+    })();
+  </script>
 
 </body>
 
