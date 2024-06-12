@@ -14,7 +14,7 @@
     --texto-gaceta-cch: #D59F0F;
     --texto-50-aniv-cch: #3813C2;
     --texto-vigiluccis: #f9c229;
-    --texto-jun-real-state: #195252;
+    --texto-jung-real-state: #195252;
     --texto-pacch: #4fc2bd;
     --texto-sid-unam: #c41443;
     --texto-sdsn-mx: #20165b;
@@ -313,10 +313,10 @@ footer .container-footer {
     color: var(--texto-vigiluccis) !important;
 }
 
-.texto-jun-real-state,
-.titulo-principal.texto-jun-real-state,
+.texto-jung-real-state,
+.titulo-principal.texto-jung-real-state,
 .texto-hover-jun-real-state:hover {
-    color: var(--texto-jun-real-state) !important;
+    color: var(--texto-jung-real-state) !important;
 }
 
 .texto-pacch,
