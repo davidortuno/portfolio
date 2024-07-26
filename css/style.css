@@ -250,7 +250,8 @@ footer .container-footer {
 }
 
 .img-intro-proyecto {
-    padding: 2.625rem 0 6.25rem 0;
+    /* padding: 2.625rem 0 6.25rem 0; */
+    padding: 1.5rem 0 6.25rem 0;
 }
 
 .imagenes-proyecto {
@@ -258,7 +259,9 @@ footer .container-footer {
 }
 
 .imagenes-proyecto img {
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .otros-proyectos {
@@ -569,7 +572,8 @@ footer .container-footer {
     }
 
     .imagenes-proyecto img {
-        margin-bottom: 0.938rem;
+        /* margin-bottom: 0.938rem; */
+        margin-bottom: 0;
     }
 
     .intro-proyecto {
