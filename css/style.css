@@ -272,6 +272,11 @@ footer .container-footer {
     margin-bottom: 1.5rem;
 }
 
+.proyecto-actual {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
 /* Termina Proyecto */
 
 /* Inician colores de proyectos */
