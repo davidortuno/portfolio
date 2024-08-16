@@ -21,11 +21,61 @@
     --texto-ampersand: #ff1f20;
 }
 
+[data-theme="light"] {
+    body {
+        color: var(--texto-negro);
+        background-color: var(--fondo-blanco);
+    }
+
+    p {
+        color: var(--texto-negro);
+    }
+
+    .navbar {
+        background-color: var(--fondo-blanco);
+        color: var(--text);
+    }
+
+    .slider:before {
+        -webkit-transition: .4s;
+        transition: .4s;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+[data-theme="dark"] {
+    body {
+        color: var(--texto-blanco);
+        background-color: var(--fondo-negro);
+    }
+
+    p {
+        color: var(--texto-blanco);
+    }
+
+    .navbar {
+        background-color: var(--fondo-negro);
+        color: var(--text);
+    }
+
+    a.link {
+        color: var(--texto-blanco);
+    }
+
+    .slider:before {
+        -webkit-transition: .4s;
+        transition: .4s;
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+}
+
 body {
     font-family: "Raleway", sans-serif;
-    color: var(--texto-negro);
     font-size: 1.125rem;
-    background-color: var(--fondo-blanco);
 }
 
 /* Inicia Index */
@@ -195,6 +245,51 @@ footer .container-footer {
 .links-footer {
     text-align: right;
 }
+
+/* Inician estilos del switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    user-select: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--azul-base);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--fondo-blanco);
+    border-radius: 50%;
+}
+
+/* Terminan estilos del switch */
 
 /* Termina Index */
 
