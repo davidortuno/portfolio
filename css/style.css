@@ -558,6 +558,72 @@ footer .container-footer {
 
 /* Termina adsila menu */
 
+/*Comienza estilos para scrollTo */
+
+.blok:nth-of-type(odd) {
+    background-color: white;
+}
+
+.blok:nth-of-type(even) {
+    background-color: black;
+}
+
+.paginacontainer {
+    height: 3000px;
+}
+
+/* #Progress
+================================================== */
+.progress-wrap {
+    position: fixed;
+    right: 30px;
+    bottom: 46px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+}
+
+.progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+}
+
+.progress-wrap .progress-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.3);
+    /* --- Arrow color --- */
+    z-index: 1;
+}
+
+.progress-wrap:hover .progress-icon {
+    color: black;
+    /* --- Arrow hover color --- */
+}
+
+.progress-wrap svg path {
+    fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+    stroke: rgba(0, 0, 0, 0.2);
+    /* --- Progress line color --- */
+    stroke-width: 4;
+    box-sizing: border-box;
+}
+
+/*Termina estilos para scrollTo */
+
 @media (min-width: 1200px) {
     .img-perfil-mobile {
         display: none;
