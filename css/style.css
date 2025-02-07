@@ -271,12 +271,12 @@ footer .container-footer {
 }
 
 /* Inician estilos del switch */
-
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-left: 0.625rem;
 }
 
 .switch input {
@@ -630,6 +630,12 @@ footer .container-footer {
 }
 
 @media (max-width: 991.98px) {
+
+    .switch {
+        position: absolute;
+        right: 70px;
+        top: 34px;
+    }
 
     .img-perfil-mobile {
         display: block;
