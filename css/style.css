@@ -9,6 +9,7 @@
     --texto-negro: #111111;
     --texto-blanco: #FFFFFF;
     --texto-pel: #F87553;
+    --texto-branding-pacch: #6e3f6a;
     --texto-eras: #49635D;
     --texto-antico: #A01916;
     --texto-gaceta-cch: #D59F0F;
@@ -441,6 +442,12 @@ footer .container-footer {
 .texto-hover-pel.menu__item-label::before {
     background: var(--texto-pel);
 } */
+
+.texto-branding-pacch,
+.titulo-principal.texto-branding-pacch,
+.texto-hover-branding-pacch:hover {
+    color: var(--texto-branding-pacch) !important;
+}
 
 .texto-eras,
 .titulo-principal.texto-eras,
